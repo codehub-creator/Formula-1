@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Lewis Hamilton | 44 Still We Rise</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Syncopate:wght@400;700&family=Russo+One&family=Inter:wght@400;700;900&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body class="dark-theme">
+    <nav class="navbar">
+        <div class="logo">LH44</div>
+        <ul class="nav-links">
+            <li><a href="#stats">Stats</a></li>
+            <li><a href="#gallery">Gallery</a></li>
+            <li><a href="#quote">Quote</a></li>
+            <li><a href="#cta">Fans</a></li>
+        </ul>
+        <button id="theme-toggle" class="theme-toggle" aria-label="Toggle dark/light mode">
+            <svg class="moon" xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none"
+                stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                <path d="M12 3a6 6 0 0 0 9 9 9 9 0 1 1-9-9Z" />
+            </svg>
+            <svg class="sun" xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none"
+                stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                <circle cx="12" cy="12" r="4" />
+                <path d="M12 2v2" />
+                <path d="M12 20v2" />
+                <path d="M4.93 4.93l1.41 1.41" />
+                <path d="M17.66 17.66l1.41 1.41" />
+                <path d="M2 12h2" />
+                <path d="M20 12h2" />
+                <path d="M4.93 19.07l1.41-1.41" />
+                <path d="M17.66 6.34l1.41-1.41" />
+            </svg>
+        </button>
+    </nav>
+
+    <section class="hero">
+        <div class="video-container">
+            <!-- Space for background video -->
+            <video autoplay muted loop playsinline class="bg-video">
+                <source
+                    src="https://assets.mixkit.co/videos/preview/mixkit-formula-one-car-racing-on-a-track-4034-large.mp4"
+                    type="video/mp4">
+            </video>
+            <div class="overlay"></div>
+        </div>
+        <div class="hero-content">
+            <h1 class="reveal-text">A DESIRE FOR SPEED</h1>
+            <p class="subtitle fade-in">7-Time World Champion. Legacy in Motion.</p>
+            <div class="hero-cta fade-in">
+                <a href="#stats" class="btn primary-btn">Explore Legacy</a>
+            </div>
+        </div>
+    </section>
+
+    <section id="stats" class="stats-section">
+        <div class="container">
+            <h2 class="section-title reveal-text">Career Highlights</h2>
+            <div class="stats-grid">
+                <div class="stat-card reveal-up">
+                    <span class="stat-number">7</span>
+                    <span class="stat-label">World Titles</span>
+                </div>
+                <div class="stat-card reveal-up">
+                    <span class="stat-number">103</span>
+                    <span class="stat-label">Race Wins</span>
+                </div>
+                <div class="stat-card reveal-up">
+                    <span class="stat-number">104</span>
+                    <span class="stat-label">Pole Positions</span>
+                </div>
+                <div class="stat-card reveal-up">
+                    <span class="stat-number">197</span>
+                    <span class="stat-label">Podiums</span>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="gallery" class="gallery-section">
+        <div class="container">
+            <h2 class="section-title reveal-text">The Showcase</h2>
+            <div class="gallery-grid">
+                <div class="gallery-item reveal-scale"><img
+                        src="https://images.unsplash.com/photo-1541443131876-44b03de101c5?auto=format&fit=crop&q=80&w=800"
+                        alt="Formula 1 Car on Track"></div>
+                <div class="gallery-item reveal-scale"><img
+                        src="https://images.unsplash.com/photo-1596727147705-61a532a659bd?auto=format&fit=crop&q=80&w=800"
+                        alt="Lewis Hamilton Celebration"></div>
+                <div class="gallery-item reveal-scale"><img
+                        src="https://images.unsplash.com/photo-1552667466-07770ae110d0?auto=format&fit=crop&q=80&w=800"
+                        alt="F1 Pit Stop Action"></div>
+                <div class="gallery-item reveal-scale"><img
+                        src="https://images.unsplash.com/photo-1533130061792-64b345e4a833?auto=format&fit=crop&q=80&w=800"
+                        alt="F1 Racing Detail"></div>
+            </div>
+        </div>
+    </section>
+
+    <section id="quote" class="quote-section">
+        <div class="quote-bg"></div>
+        <div class="container">
+            <blockquote class="fade-in">
+                "Still we rise. It's not about how you fall, it's about how you get back up."
+                <cite>— Sir Lewis Hamilton</cite>
+            </blockquote>
+        </div>
+    </section>
+
+    <section id="cta" class="cta-section">
+        <div class="container">
+            <div class="cta-box reveal-up">
+                <h2>Join the 44 Legacy</h2>
+                <p>Be the first to get exclusive updates on Lewis's journey, fashion drops, and Mission 44 news.</p>
+                <form class="cta-form">
+                    <input type="email" placeholder="Enter your email" required>
+                    <button type="submit" class="btn secondary-btn">Subscribe</button>
+                </form>
+            </div>
+        </div>
+    </section>
+
+    <footer class="footer">
+        <p>&copy; 2026 Lewis Hamilton Fan Experience. All rights reserved.</p>
+    </footer>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/gsap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/ScrollTrigger.min.js"></script>
+    <script src="main.js"></script>
+</body>
+
+</html>
